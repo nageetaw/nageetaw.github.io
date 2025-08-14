@@ -1,503 +1,130 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Mobile Metas -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Site Metas -->
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nageeta Kumari — Data Scientist & AI/ML Engineer</title>
+  <meta name="description" content="Nageeta Kumari — Data Scientist & AI/ML Engineer in Paris. M.Sc. MVA (ENS Paris-Saclay). NLP, LLMs, Generative AI. Actively seeking roles." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <meta property="og:title" content="Nageeta Kumari — Data Scientist & AI/ML Engineer" />
+  <meta property="og:description" content="M.Sc. MVA (ENS Paris-Saclay). NLP, LLMs, Generative AI. Based in Paris." />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Nageeta Kumari</a>
+    <button class="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    <nav id="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="works.html">Publications & Projects</a>
+    </nav>
+  </header>
 
-    <title>Nageeta Kumari</title>
-
-    <!-- slider stylesheet -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"
-    />
-
-    <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-    <!-- fonts style -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <div class="hero_area">
-      <!-- header section strats -->
-      <header class="header_section">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-11 offset-md-1 px-0">
-              <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-                <a class="navbar-brand" href="index.html" >
-                  <span> Nageeta Kumari </span>
-                </a>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  s
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div
-                  class="collapse navbar-collapse"
-                  id="navbarSupportedContent"
-                >
-                  <div
-                    class="d-flex ml-auto flex-column flex-lg-row align-items-center"
-                  >
-                    <ul class="navbar-nav">
-                      <li class="nav-item active">
-                        <a class="nav-link pl-0" href="index.html"
-                          >Home <span class="sr-only">(current)</span></a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#about"> About </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#skills"> Skills </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Hi 👋, I’m <span class="accent">Nageeta</span></h1>
+        <p class="tagline">Data Scientist • AI & NLP Enthusiast • Paris, France</p>
+        <p class="looking">🎯 <strong>Actively seeking Applied Data Scientist & AI/ML Engineer roles</strong></p>
+        <div class="cta-row">
+          <a class="btn primary" href="cv.html">View my CV</a>
+          <a class="btn" href="works.html">See publications & projects</a>
         </div>
-      </header>
-      <!-- end header section -->
-
-      <!-- slider section -->
-      <div class="slider_section">
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-lg-6 offset-lg-1">
-                    <div class="detail-box">
-                      <div class="heading_box">
-                        <h2>I'm Nageeta and Here is <span>My</span></h2>
-                        <h1>Portfolio</h1>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 px-0">
-                    <div class="img-box">
-                      <img style="border-radius: 50%; width: 300px; height: 300px;" src="images/my-photo.jpeg" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- end slider section -->
-    </div>
-    <!-- end hero area -->
-
-    <!-- design section -->
-
-    <section class="design_section layout_padding-top">
-      <div class="container">
-        <div class="heading_container">
-          <h2>Developer</h2>
-        </div>
-        <div class="design_container layout_padding2">
-          <div class="box b-1">
-            <h5>
-              Full Stack <br />
-              Developer
-            </h5>
-          </div>
-          <div class="box b-2">
-            <h5>
-              UX/UI <br />
-              Designer
-            </h5>
-          </div>
-          <div class="box b-3">
-            <h5>Mobile App <br />Developer</h5>
-          </div>
-        </div>
+        <ul class="quick-links">
+          <li><a href="mailto:nigeetawadhwani@gmail.com">nigeetawadhwani@gmail.com</a></li>
+          <li><a href="https://github.com/nageetaw" target="_blank" rel="noopener">github.com/nageetaw</a></li>
+          <li><a href="https://www.linkedin.com/in/nageeta-kumari-3a48401a3/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li>Paris, France</li>
+        </ul>
       </div>
     </section>
 
-    <!-- end design section   -->
-    <div>
-      <hr class="mt-5 mb-5" />
-    </div>
-    <!-- about section -->
-
-    <section class="about_section layout_padding-bottom" id="about">
-      <div class="container">
-        <div class="heading_container">
-          <h2>About</h2>
-        </div>
-        <div class="box layout_padding2-top layout_padding-bottom">
-          <div class="detail-box">
-            <p>
-              Logical, Innovative and task-driven developer with two consecutive
-              Merit scholarships (2019-2020), dedicated to building optimized
-              mobile applications with user-friendly UI. Creative and judicious
-              when creating UI/UX that can capture human attention. Proficient
-              in object-oriented programming and MVC model as well as algorithms
-              and data structures, can smoothly and easily handle Errors and
-              Bugs. Enjoys collaborating with colleagues from different cultures
-              to build a great platform for working.
-            </p>
-          </div>
-        </div>
-      </div>
+    <!-- About / Interests -->
+    <section class="card">
+      <h2>About me</h2>
+      <p>
+        I’m a Data Scientist with an M.Sc. in <strong>MVA (Mathematics, Vision & Learning)</strong> from <em>ENS Paris-Saclay</em> and an M.Sc. in <strong>Data Science</strong> from <em>Université Paris-Saclay</em>.
+        My research/industry interests include <strong>NLP, Large Language Models, Generative AI, and Machine Learning</strong>. I enjoy building robust evaluation frameworks and working with large-scale, distributed data. :contentReference[oaicite:1]{index=1}
+      </p>
     </section>
 
-    <!-- end about section -->
-    <div>
-      <hr class="mt-5 mb-5" />
-    </div>
-    <!-- project section -->
+    <!-- Experience -->
+    <section class="card">
+      <h2>Experience</h2>
 
-    <section class="blog_section layout_padding-bottom" id="projects">
-      <div class="container">
-        <div class="heading_container">
-          <h2>Projects</h2>
+      <article class="item">
+        <div class="item-head">
+          <h3>Data Science Intern — Datadog, Paris</h3>
+          <span class="item-dates">Apr 2024 – Present</span>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="box">
-              <div class="img-box">
-                <a
-                  target="_blank"
-                  href="https://github.com/nageetaw/PortfolioProjects/tree/main/Scrimish"
-                >
-                  <img src="images/scrimish.jpg" alt="" />
-                </a>
-              </div>
-              <div class="detail-box">
-                <h4>Scimish Game</h4>
-                <p>
-                  The game is developed for andriod application using the andiod
-                  studio
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <div class="img-box">
-                <a
-                  target="_blank"
-                  href="https://github.com/nageetaw/PortfolioProjects/tree/main/LearnWithFun"
-                >
-                  <img src="images/LearnWithFun.jpg" alt="" />
-                </a>
-              </div>
-              <div class="detail-box">
-                <h4>Learn With Fun</h4>
-                <p>
-                  Learn With Fun is a HCI based game, developed for childerns
-                  using the andriod studio
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <div class="img-box">
-                <a
-                  target="_blank"
-                  href="https://github.com/nageetaw/PortfolioProjects/tree/main/FoodBasket"
-                >
-                  <img src="images/kfcclone.jpg" alt="" />
-                </a>
-              </div>
-              <div class="detail-box">
-                <h4>Food Basket</h4>
-                <p>
-                  The following application is the clone of the KFC app,
-                  developed using Flutter and Firebase.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <div class="img-box">
-                <a
+        <ul>
+          <li>Researched root-cause analysis on distributed microservices traces; proposed unbiased sampling and wrote SQL for data collection.</li>
+          <li>Built inference models for granular resource-level root-cause detection against APM alerts.</li>
+          <li>Designed unbiased evaluation for AccuPath; achieved ~<strong>95% recall</strong> and <strong>88% precision</strong>. :contentReference[oaicite:2]{index=2}</li>
+        </ul>
+      </article>
 
-                  target="_blank"
-                  href="https://github.com/nageetaw/PortfolioProjects/tree/main/SmartFileFilter"
-                >
-                  <img src="images/smartFitter.jpg" alt="" />
-                </a>
-              </div>
-              <div class="detail-box">
-                <h4>Smart File Filter</h4>
-                <p>
-                  Smart filter is a desktop based application, developed using C
-                  sharp and SQL database
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <div class="img-box">
-                <a
-                  target="_blank"
-                  href="https://github.com/nageetaw/PortfolioProjects/tree/main/SibaStackOverFlow"
-                >
-                  <img src="images/Sibaoverflow.jpg" alt="" />
-                </a>
-              </div>
-              <div class="detail-box">
-                <h4>Siba Stack Overflow</h4>
-                <p>
-                  Siba Stack overflow is a web based application for Where
-                  students and teachers can communicate is developed using React
-                  JS, Node JS and MYSQL
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <div class="img-box">
-                <a
-                  target="_blank"
-                  href="https://github.com/nageetaw/PortfolioProjects/tree/main/GenderDetector"
-                >
-                  <img src="images/genderDetector.jpg" alt="" />
-                </a>
-              </div>
-              <div class="detail-box">
-                <h4>Gender Detection using Eye</h4>
-                <p>
-                  Meachine Learning Project to detect Gender using the human
-                  eye. CNN is used to train the modal.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <div class="img-box">
-                <a
-                  target="_blank"
-                  href="https://github.com/nageetaw/PortfolioProjects/tree/main/AccountManagemnetSystem"
-                >
-                  <img src="images/accountManagementSystem.jpg" alt="" />
-                </a>
-              </div>
-              <div class="detail-box">
-                <h4>Account Management System</h4>
-                <p>
-                  The following Account Management System is developed using
-                  java Swing and MS Access database
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <div class="img-box">
-                <a
-                  target="_blank"
-                  href="https://github.com/nageetaw/PortfolioProjects/tree/main/MailListManager"
-                >
-                  <img src="images/mailListManager.jpg" alt="" />
-                </a>
-              </div>
-              <div class="detail-box">
-                <h4>Mail List Manager</h4>
-                <p>
-                  Mail List Manager is a web application developed using HTML,
-                  CSS, PHP and MYSQl. The purpose of the application is to
-                  manage and store csv files
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="box">
-              <div class="img-box">
-                <a
-                  target="_blank"
-                  href="https://github.com/nageetaw/PortfolioProjects/tree/main/CarReservationSystem"
-                >
-                  <img src="images/carReservation.jpg" alt="" />
-                </a>
-              </div>
-              <div class="detail-box">
-                <h4>Car Reservation System</h4>
-                <p>
-                  The following Car Reservation System is developed using java
-                  Swing and MySQL database
-                </p>
-              </div>
-            </div>
-          </div>
+      <article class="item">
+        <div class="item-head">
+          <h3>Research Intern — INRAE</h3>
+          <span class="item-dates">May 2024 – Jul 2024</span>
         </div>
-      </div>
-    </section>
-    <div>
-      <hr class="mt-5 mb-5" />
-    </div>
-    <!-- end project section -->
+        <ul>
+          <li>Harmonized INCA2/INCA3 dietary surveys; mapped to FOODEX2; enriched consumer ontology; built knowledge base with RDFLib. :contentReference[oaicite:3]{index=3}</li>
+        </ul>
+      </article>
 
-    <!-- expand section -->
-
-    <!-- end expand section -->
-
-    <!-- blog section -->
-    <section class="project_section layout_padding-bottom" id="skills">
-      <div class="container">
-        <div class="heading_container">
-          <h2>Skills</h2>
+      <article class="item">
+        <div class="item-head">
+          <h3>Software Engineer — Sound M & DLLC</h3>
+          <span class="item-dates">Aug 2022 – Aug 2023</span>
         </div>
-        <div class="project_container layout_padding2-top">
-          <div class="box">
-            <img src="images/react-native.png" alt="" />
-          </div>
-          <div class="box">
-            <img src="images/flutter.png" alt="" />
-          </div>
-          <div class="box">
-            <img src="images/reactjs.png" alt="" />
-          </div>
-          <div class="box">
-            <img src="images/mongodb.png" alt="" />
-          </div>
-          <div class="box">
-            <img src="images/sql.png" alt="" />
-          </div>
-          <div class="box">
-            <img src="images/firebase.png" alt="" />
-          </div>
-          <div class="box">
-            <img src="images/nodejs.png" alt="" />
-          </div>
-          <div class="box">
-            <img src="images/git.jpg" alt="" />
-          </div>
-          <div class="box">
-            <img src="images/figma.png" alt="" />
-          </div>
-          <div class="box">
-            <img src="images/java.png" alt="" />
-          </div>
-          <div class="box">
-            <img src="images/csharp.png" alt="" />
-          </div>
-          <div class="box">
-            <img src="images/candc++.jpg" alt="" />
-          </div>
-        </div>
-      </div>
+        <ul>
+          <li>Built secure chat (individual/group) with React.js & FastAPI; created profile/auth APIs; deployments on AWS. :contentReference[oaicite:4]{index=4}</li>
+        </ul>
+      </article>
     </section>
 
-    <!-- end blog section -->
-    <div>
-      <hr class="mt-5 mb-5" />
-    </div>
-    <!-- contact section -->
-
-    <section class="contact_section layout_padding" id="contact">
-      <div class="container">
-        <div class="heading_container">
-          <h2>Contact</h2>
-        </div>
-        <div class="">
-          <div class="">
-            <div class="row">
-              <div
-                class="col-md-4 mt-5 mx-auto align-items-center justify-content-center"
-              >
-                <h5>
-                  Email:<a   target="_blank" href="https://mail.google.com/">
-                    nigeetawadhwani@gmail.com</a
-                  >
-                </h5>
-                <h5>
-                  linkedin:
-                  <a
-                    href="https://www.linkedin.com/in/nageeta-kumari-3a48401a3/"
-                      target="_blank"
-                    >Nageeta Kumari</a
-                  >
-                </h5>
-                <h5>
-                  fiverr:
-                  <a href="https://www.fiverr.com/nageeta_w"
-                  target="_blank"
-                    >NageetaW</a
-                  >
-                </h5>
-                <h5>
-                  Upwork:
-                  <a
-                    target="_blank"
-                    href="https://www.upwork.com/freelancers/~015168d5de65b18076"
-                    >Nigeeta</a
-                  >
-                </h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Education -->
+    <section class="card">
+      <h2>Education</h2>
+      <ul class="edu">
+        <li><strong>M.Sc. MVA</strong>, ENS Paris-Saclay — 2024–2025 (GPA 16/20). :contentReference[oaicite:5]{index=5}</li>
+        <li><strong>M.Sc. Data Science</strong>, Université Paris-Saclay — 2023–2024 (GPA 15.5/20). :contentReference[oaicite:6]{index=6}</li>
+        <li><strong>B.Sc. Computer Science</strong>, Sukkur IBA University — 2018–2022 (CGPA 3.68/4). :contentReference[oaicite:7]{index=7}</li>
+      </ul>
     </section>
 
-    <!-- end contact section -->
+    <!-- Tech Stack -->
+    <section class="card">
+      <h2>Tech Stack</h2>
+      <ul class="tags">
+        <li>Python</li><li>PyTorch</li><li>scikit-learn</li><li>Transformers</li><li>DoWhy</li>
+        <li>SQL</li><li>MongoDB</li><li>REST APIs</li>
+        <li>AWS</li><li>Google Cloud</li>
+        <li>Git & GitLab</li>
+        <li>LLMs • VAEs • GANs • Graph ML</li>
+      </ul>
+    </section>
 
-    <!-- info section -->
+    <!-- Call to action -->
+    <section class="cta card">
+      <h2>Open to opportunities</h2>
+      <p>If you’re hiring for Applied Data Scientist or AI/ML Engineer roles (France/EU), I’d love to chat.</p>
+      <a class="btn primary" href="mailto:nigeetawadhwani@gmail.com">Contact me</a>
+    </section>
+  </main>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Nageeta Kumari · Paris, France</small>
+  </footer>
 
-    <script>
-      function openNav() {
-        document.getElementById("myNav").style.width = "100%";
-      }
-
-      function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-      }
-    </script>
-  </body>
+  <script src="assets/script.js"></script>
+</body>
 </html>
