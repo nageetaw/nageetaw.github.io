@@ -29,19 +29,26 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-inner">
-        <h1>Hi 👋, I’m <span class="accent">Nageeta</span></h1>
-        <p class="tagline">Data Scientist • AI & NLP Enthusiast • Paris, France</p>
-        <p class="looking">🎯 <strong>Actively seeking Applied Data Scientist & AI/ML Engineer roles</strong></p>
-        <div class="cta-row">
-          <a class="btn primary" href="cv.html">View my CV</a>
-          <a class="btn" href="works.html">See publications & projects</a>
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1>Hi 👋, I’m <span class="accent">Nageeta</span></h1>
+            <p class="tagline">Data Scientist • AI & NLP Enthusiast • Paris, France</p>
+            <p class="looking">🎯 <strong>Actively seeking Applied Data Scientist & AI/ML Engineer roles</strong></p>
+            <div class="cta-row">
+              <a class="btn primary" href="cv.html">View my CV</a>
+              <a class="btn" href="works.html">See publications & projects</a>
+            </div>
+            <ul class="quick-links">
+              <li><a href="mailto:nigeetawadhwani@gmail.com">nigeetawadhwani@gmail.com</a></li>
+              <li><a href="https://github.com/nageetaw" target="_blank" rel="noopener">github.com/nageetaw</a></li>
+              <li><a href="https://www.linkedin.com/in/nageeta-kumari-3a48401a3/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li>Paris, France</li>
+            </ul>
+          </div>
+          <div class="hero-photo-wrap">
+            <img class="hero-photo" src="images/my-photo.jpeg" alt="Photo of Nageeta Kumari" />
+          </div>
         </div>
-        <ul class="quick-links">
-          <li><a href="mailto:nigeetawadhwani@gmail.com">nigeetawadhwani@gmail.com</a></li>
-          <li><a href="https://github.com/nageetaw" target="_blank" rel="noopener">github.com/nageetaw</a></li>
-          <li><a href="https://www.linkedin.com/in/nageeta-kumari-3a48401a3/" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li>Paris, France</li>
-        </ul>
       </div>
     </section>
 
@@ -50,7 +57,7 @@
       <h2>About me</h2>
       <p>
         I’m a Data Scientist with an M.Sc. in <strong>MVA (Mathematics, Vision & Learning)</strong> from <em>ENS Paris-Saclay</em> and an M.Sc. in <strong>Data Science</strong> from <em>Université Paris-Saclay</em>.
-        My research/industry interests include <strong>NLP, Large Language Models, Generative AI, and Machine Learning</strong>. I enjoy building robust evaluation frameworks and working with large-scale, distributed data. :contentReference[oaicite:1]{index=1}
+        My interests include <strong>NLP, Large Language Models, Generative AI, and Machine Learning</strong>.
       </p>
     </section>
 
@@ -64,9 +71,9 @@
           <span class="item-dates">Apr 2024 – Present</span>
         </div>
         <ul>
-          <li>Researched root-cause analysis on distributed microservices traces; proposed unbiased sampling and wrote SQL for data collection.</li>
-          <li>Built inference models for granular resource-level root-cause detection against APM alerts.</li>
-          <li>Designed unbiased evaluation for AccuPath; achieved ~<strong>95% recall</strong> and <strong>88% precision</strong>. :contentReference[oaicite:2]{index=2}</li>
+          <li>Worked on root-cause analysis for large-scale distributed systems and observability data.</li>
+          <li>Built and evaluated models to improve incident diagnosis from traces and performance signals.</li>
+          <li>Collaborated with engineers to design robust, unbiased evaluation pipelines.</li>
         </ul>
       </article>
 
@@ -76,7 +83,8 @@
           <span class="item-dates">May 2024 – Jul 2024</span>
         </div>
         <ul>
-          <li>Harmonized INCA2/INCA3 dietary surveys; mapped to FOODEX2; enriched consumer ontology; built knowledge base with RDFLib. :contentReference[oaicite:3]{index=3}</li>
+          <li>Harmonized national dietary datasets (INCA2/INCA3) and mapped to FOODEX2.</li>
+          <li>Built knowledge-base components and semantic tooling for data integration.</li>
         </ul>
       </article>
 
@@ -86,7 +94,8 @@
           <span class="item-dates">Aug 2022 – Aug 2023</span>
         </div>
         <ul>
-          <li>Built secure chat (individual/group) with React.js & FastAPI; created profile/auth APIs; deployments on AWS. :contentReference[oaicite:4]{index=4}</li>
+          <li>Developed a messaging platform (individual & group chats) and supporting REST APIs.</li>
+          <li>Implemented authentication/authorization and contributed to deployments on cloud.</li>
         </ul>
       </article>
     </section>
@@ -95,9 +104,9 @@
     <section class="card">
       <h2>Education</h2>
       <ul class="edu">
-        <li><strong>M.Sc. MVA</strong>, ENS Paris-Saclay — 2024–2025 (GPA 16/20). :contentReference[oaicite:5]{index=5}</li>
-        <li><strong>M.Sc. Data Science</strong>, Université Paris-Saclay — 2023–2024 (GPA 15.5/20). :contentReference[oaicite:6]{index=6}</li>
-        <li><strong>B.Sc. Computer Science</strong>, Sukkur IBA University — 2018–2022 (CGPA 3.68/4). :contentReference[oaicite:7]{index=7}</li>
+        <li><strong>M.Sc. MVA</strong>, ENS Paris-Saclay — 2024–2025</li>
+        <li><strong>M.Sc. Data Science</strong>, Université Paris-Saclay — 2023–2024</li>
+        <li><strong>B.Sc. Computer Science</strong>, Sukkur IBA University — 2018–2022</li>
       </ul>
     </section>
 
@@ -105,11 +114,15 @@
     <section class="card">
       <h2>Tech Stack</h2>
       <ul class="tags">
-        <li>Python</li><li>PyTorch</li><li>scikit-learn</li><li>Transformers</li><li>DoWhy</li>
-        <li>SQL</li><li>MongoDB</li><li>REST APIs</li>
+        <li>Python</li><li>PyTorch</li><li>scikit-learn</li><li>Transformers</li>
+        <li>Transfer Learning</li><li>Hugging Face</li>
+        <li>JavaScript</li><li>TypeScript</li><li>React.js</li>
+        <li>FastAPI</li><li>Flask</li>
+        <li>SQL</li><li>MongoDB</li>
+        <li>REST APIs</li>
         <li>AWS</li><li>Google Cloud</li>
-        <li>Git & GitLab</li>
-        <li>LLMs • VAEs • GANs • Graph ML</li>
+        <li>Git</li><li>GitLab</li>
+        <li>LLMs • Generative Models • Graph ML</li>
       </ul>
     </section>
 
