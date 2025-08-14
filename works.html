@@ -18,62 +18,92 @@
   </header>
 
   <main>
+    <!-- Publications -->
     <section class="card">
       <h1>Publications</h1>
       <article class="pub">
         <h3>RelevAI-Reviewer: A Benchmark on AI Reviewers for Survey Paper Relevance</h3>
         <p><em>Nageeta Kumari</em>, Paulo Henrique Couto, Quang Phuoc Ho (2024).</p>
         <p>
-          <a href="https://arxiv.org/abs/2406.10294" target="_blank" rel="noopener">arXiv</a> ·
-          <a href="https://hal.science/LISN/hal-04608255v1" target="_blank" rel="noopener">HAL</a>
+          <a class="gh-link" href="https://arxiv.org/abs/2406.10294" target="_blank" rel="noopener">arXiv</a> ·
+          <a class="gh-link" href="https://hal.science/LISN/hal-04608255v1" target="_blank" rel="noopener">HAL</a>
         </p>
-        <p class="muted">Benchmarking AI “reviewers” for survey-paper relevance using 25,164 prompt–paper pairs; strong results with fine-tuned BERT and thermometer labels. :contentReference[oaicite:12]{index=12}</p>
       </article>
     </section>
 
+    <!-- Master's education projects -->
     <section class="card">
-      <h1>Selected Projects</h1>
+      <h1>Education Projects (Master’s)</h1>
 
       <article class="proj">
         <h3>RelevAI-Reviewer (Benchmark System)</h3>
-        <p>Relevance ranking for survey papers vs call-for-papers prompts; SVM + sentence embeddings and fine-tuned BERT; open benchmark. :contentReference[oaicite:13]{index=13}</p>
-        <p><a href="https://github.com/nageetaw" target="_blank" rel="noopener">Code (GitHub)</a></p>
+        <p>Relevance ranking for survey papers vs. CFP prompts using classic ML baselines and fine-tuned transformer models; open evaluation benchmark.</p>
+        <p><a class="gh-link" href="https://github.com/nageetaw" target="_blank" rel="noopener">Code (GitHub)</a></p>
       </article>
 
       <article class="proj">
         <h3>Research on Chain-of-Tables (Table QA)</h3>
-        <p>Compared Chain-of-Table and ReAcTable on WikiTQ; explored contrastive & few-shot prompts. :contentReference[oaicite:14]{index=14}</p>
+        <p>Compared Chain-of-Table and ReAcTable on WikiTQ; explored contrastive and few-shot prompting strategies for table question answering.</p>
       </article>
 
       <article class="proj">
         <h3>Composed Image Retrieval with Enhanced Pooling</h3>
-        <p>Adapted CoVR-BLIP-2 to CIRR; attention pooling improved Recall@1 by ~3%; experiments on GCP. :contentReference[oaicite:15]{index=15}</p>
+        <p>Adapted CoVR-BLIP-2 to the CIRR dataset; experimented with attention-based pooling and large-scale training on cloud infrastructure.</p>
       </article>
 
       <article class="proj">
         <h3>Evaluating Compositional Understanding in VLMs</h3>
-        <p>Replicated/extended “Bags-of-Words” analysis using ARO (VG relations/attributes); Qwen2.5-VL-3B-Instruct outperformed contrastive models; +16% on some VGA tasks. :contentReference[oaicite:16]{index=16}</p>
+        <p>Extended “bag-of-words” style probes on ARO (visual relations/attributes) to assess compositional reasoning in vision-language models.</p>
+      </article>
+    </section>
+
+    <!-- Bachelor's projects (from your old portfolio) -->
+    <section class="card">
+      <h1>Bachelor’s Projects</h1>
+
+      <article class="proj">
+        <h3>Scrimish (Android Game)</h3>
+        <p>Android implementation of the Scrimish card game using Android Studio.</p>
+        <p><a class="gh-link" href="https://github.com/nageetaw/PortfolioProjects/tree/main/Scrimish" target="_blank" rel="noopener">GitHub</a></p>
       </article>
 
-      <h2 class="subtle">Earlier/Additional (from portfolio)</h2>
-      <ul class="bullets">
-        <li><a href="https://github.com/nageetaw/PortfolioProjects/tree/main/Scrimish" target="_blank" rel="noopener">Scrimish (Android)</a></li>
-        <li><a href="https://github.com/nageetaw/PortfolioProjects/tree/main/LearnWithFun" target="_blank" rel="noopener">Learn With Fun (HCI Game)</a></li>
-        <li><a href="https://github.com/nageetaw/PortfolioProjects/tree/main/FoodBasket" target="_blank" rel="noopener">Food Basket (Flutter + Firebase)</a></li>
-        <li><a href="https://github.com/nageetaw/PortfolioProjects/tree/main/SmartFileFilter" target="_blank" rel="noopener">Smart File Filter (C# + SQL)</a></li>
-        <li><a href="https://github.com/nageetaw/PortfolioProjects/tree/main/SibaStackOverFlow" target="_blank" rel="noopener">SIBA Stack Overflow (React/Node/MySQL)</a></li>
-        <li><a href="https://github.com/nageetaw/PortfolioProjects/tree/main/GenderDetector" target="_blank" rel="noopener">Gender Detection (CNN)</a></li>
-        <li><a href="https://github.com/nageetaw/PortfolioProjects/tree/main/AccountManagemnetSystem" target="_blank" rel="noopener">Account Management (Java Swing)</a></li>
-        <li><a href="https://github.com/nageetaw/PortfolioProjects/tree/main/MailListManager" target="_blank" rel="noopener">Mail List Manager (PHP)</a></li>
-        <li><a href="https://github.com/nageetaw/PortfolioProjects/tree/main/CarReservationSystem" target="_blank" rel="noopener">Car Reservation (Java Swing + MySQL)</a></li>
-      </ul>
-    </section>
-  </main>
+      <article class="proj">
+        <h3>Learn With Fun (HCI Game)</h3>
+        <p>Human-computer interaction–focused learning game for children built in Android Studio.</p>
+        <p><a class="gh-link" href="https://github.com/nageetaw/PortfolioProjects/tree/main/LearnWithFun" target="_blank" rel="noopener">GitHub</a></p>
+      </article>
 
-  <footer class="site-footer">
-    <small>© <span id="year"></span> Nageeta Kumari</small>
-  </footer>
+      <article class="proj">
+        <h3>Food Basket (KFC App Clone)</h3>
+        <p>Mobile app clone of KFC using Flutter and Firebase (auth, database, and ordering flows).</p>
+        <p><a class="gh-link" href="https://github.com/nageetaw/PortfolioProjects/tree/main/FoodBasket" target="_blank" rel="noopener">GitHub</a></p>
+      </article>
 
-  <script src="assets/script.js"></script>
-</body>
-</html>
+      <article class="proj">
+        <h3>Smart File Filter (Desktop)</h3>
+        <p>File filtering/management desktop app built with C# and SQL database.</p>
+        <p><a class="gh-link" href="https://github.com/nageetaw/PortfolioProjects/tree/main/SmartFileFilter" target="_blank" rel="noopener">GitHub</a></p>
+      </article>
+
+      <article class="proj">
+        <h3>SIBA Stack Overflow (Q&A Web App)</h3>
+        <p>Student/teacher Q&A platform built with React.js, Node.js, and MySQL.</p>
+        <p><a class="gh-link" href="https://github.com/nageetaw/PortfolioProjects/tree/main/SibaStackOverFlow" target="_blank" rel="noopener">GitHub</a></p>
+      </article>
+
+      <article class="proj">
+        <h3>Gender Detection Using Eye (ML)</h3>
+        <p>Convolutional neural network trained to predict gender from eye images.</p>
+        <p><a class="gh-link" href="https://github.com/nageetaw/PortfolioProjects/tree/main/GenderDetector" target="_blank" rel="noopener">GitHub</a></p>
+      </article>
+
+      <article class="proj">
+        <h3>Account Management System (Desktop)</h3>
+        <p>Java Swing application with MS Access/MySQL backend for account records.</p>
+        <p><a class="gh-link" href="https://github.com/nageetaw/PortfolioProjects/tree/main/AccountManagemnetSystem" target="_blank" rel="noopener">GitHub</a></p>
+      </article>
+
+      <article class="proj">
+        <h3>Mail List Manager (Web)</h3>
+        <p>CSV mailing list storage and management built with HTML/CSS/PHP and MySQL.</p>
+        <p><a class="gh-link" href="https://githu
