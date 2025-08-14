@@ -60,3 +60,13 @@ main{max-width:980px;margin:0 auto;padding:24px 20px 64px}
   #nav{display:none;flex-direction:column;position:absolute;top:56px;right:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px}
   #nav a{margin:6px}
 }
+
+.hero-photo {
+  width: 180px;       /* reduced from 260px */
+  height: 180px;      /* keep square shape */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--line);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+}
+
