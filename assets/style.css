@@ -69,4 +69,10 @@ main{max-width:980px;margin:0 auto;padding:24px 20px 64px}
   border: 2px solid var(--line);
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
 }
+@media (max-width: 600px) {
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+  }
+}
 
