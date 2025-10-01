@@ -1,4 +1,151 @@
+
 <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Publications & Projects — Nageeta Kumari</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Nageeta Kumari</a>
+    <button class="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="works.html" class="active">Publications & Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Publications -->
+    <section class="card">
+      <h1>Publications</h1>
+      <article class="pub">
+        <h3>RelevAI-Reviewer: A Benchmark on AI Reviewers for Survey Paper Relevance</h3>
+        <p><em>Nageeta Kumari</em>, Paulo Henrique Couto, Quang Phuoc Ho (2024).</p>
+        <p>
+          <a class="gh-link" href="https://arxiv.org/abs/2406.10294" target="_blank">arXiv</a> ·
+          <a class="gh-link" href="https://hal.science/LISN/hal-04608255v1" target="_blank">HAL</a>
+        </p>
+      </article>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="card">
+      <h1>Projects</h1>
+
+      <!-- NLP -->
+      <h2 class="category">Natural Language Processing</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>RelevAI-Reviewer (Benchmark System)</h3>
+          <p>Relevance ranking for survey papers vs CFP prompts using ML baselines & fine-tuned transformers.</p>
+          <ul class="learned">
+            <li>Hands-on with transformer fine-tuning</li>
+            <li>Benchmark evaluation design</li>
+            <li>Experience with academic datasets</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/nageetaw" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Research on Chain-of-Tables (Table QA)</h3>
+          <p>Compared Chain-of-Table and ReAcTable on WikiTQ with contrastive and few-shot prompting.</p>
+          <ul class="learned">
+            <li>Explored prompt engineering</li>
+            <li>Studied contrastive prompting</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Computer Vision -->
+      <h2 class="category">Computer Vision</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Composed Image Retrieval with Enhanced Pooling</h3>
+          <p>Adapted CoVR-BLIP-2 to CIRR dataset with attention pooling & large-scale training.</p>
+          <ul class="learned">
+            <li>Worked on multimodal retrieval</li>
+            <li>Scaled training to cloud infrastructure</li>
+          </ul>
+          <div class="links">
+            <a href="https://drive.google.com/file/d/1regVMTobFC2RjGxqjbim6N_EMM36UB3f/view" target="_blank">Report</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Evaluating Compositional Understanding in VLMs</h3>
+          <p>Extended bag-of-words probes on ARO to assess reasoning in vision-language models.</p>
+          <ul class="learned">
+            <li>Learned probing techniques</li>
+            <li>Analyzed compositional reasoning</li>
+          </ul>
+          <div class="links">
+            <a href="https://drive.google.com/file/d/1uYfVymnJbE6bkh3pwxajPRQLI1e-EQ5i/view" target="_blank">Report</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Software Engineering -->
+      <h2 class="category">Software Engineering</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Scrimish (Android Game)</h3>
+          <p>Android implementation of Scrimish card game.</p>
+          <ul class="learned">
+            <li>Game logic design</li>
+            <li>Android Studio development</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/nageetaw/PortfolioProjects/tree/main/Scrimish" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>SIBA Stack Overflow (Q&A Web App)</h3>
+          <p>Student/teacher Q&A platform with React.js, Node.js, MySQL.</p>
+          <ul class="learned">
+            <li>Full-stack dev with React + Node</li>
+            <li>Database design</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/nageetaw/PortfolioProjects/tree/main/SibaStackOverFlow" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Machine Learning -->
+      <h2 class="category">Machine Learning</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Gender Detection Using Eye</h3>
+          <p>CNN model predicting gender from eye images.</p>
+          <ul class="learned">
+            <li>Preprocessing eye datasets</li>
+            <li>CNN model training</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/nageetaw/PortfolioProjects/tree/main/GenderDetector" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Nageeta Kumari · Paris, France</small>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
+
+<!-- <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -111,4 +258,4 @@
       <article class="proj">
         <h3>Mail List Manager (Web)</h3>
         <p>CSV mailing list storage and management built with HTML/CSS/PHP and MySQL.</p>
-        <p><a class="gh-link" href="https://githu
+        <p><a class="gh-link" href="https://githu -->
