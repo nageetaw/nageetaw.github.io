@@ -117,7 +117,9 @@ a:hover {
     flex-direction: column;
     gap: 20px;
 }
-
+.card-column .card + .card {
+    margin-top: 20px;
+}
 
 .card img {
     width: 100%;
