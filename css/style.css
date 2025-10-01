@@ -253,6 +253,49 @@ a:focus {
   margin-bottom: 45px;
 }
 
+
+/* --------------------
+   PROJECT LINKS WITH ICONS
+-------------------- */
+.links a {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #24263c;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.links a:hover {
+  border-color: #fed11f;
+  color: #000;
+}
+
+.links a::before {
+  content: "🔗";
+  margin-right: 6px;
+  font-size: 1rem;
+}
+
+/* GitHub link */
+.links a.github::before {
+  content: "🐙";
+}
+
+/* YouTube link */
+.links a.youtube::before {
+  content: "▶️";
+}
+
+/* Report / PDF link */
+.links a.report::before {
+  content: "📄";
+}
+
+
 .slider_section .detail-box a::after {
   content: "";
   width: 35px;
