@@ -58,11 +58,26 @@
         }
 
         .intro-section {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 40px;
             padding: 60px 20px 40px;
-            background: linear-gradient(135deg, #f9f5ff 0%, #ffffff 100%);
+            background-color: #ffffff;
             border-radius: 10px;
             margin-bottom: 40px;
+        }
+
+        .intro-image {
+            flex-shrink: 0;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #5e2a9b;
+        }
+
+        .intro-content {
+            flex: 1;
         }
 
         .intro-section h1 {
@@ -74,8 +89,6 @@
         .intro-section p {
             font-size: 18px;
             color: #555;
-            max-width: 800px;
-            margin: 0 auto;
             line-height: 1.8;
         }
 
@@ -105,7 +118,7 @@
         .card-grid {
             display: grid;
             gap: 20px;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             margin-top: 30px;
         }
 
@@ -118,12 +131,31 @@
         .card-content {
             padding: 15px;
         }
+
+        .publication-card {
+            grid-column: 1 / -1;
+        }
+
+        @media (max-width: 768px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .intro-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .intro-image {
+                width: 180px;
+                height: 180px;
+            }
+        }
     </style>
 </head>
 <body>
     <header class="navbar">
         <div class="container">
-            <h1 class="logo">Nageeta</h1>
             <nav>
                 <ul class="nav-links">
                     <li><a href="#intro">Home</a></li>
@@ -141,8 +173,11 @@
     <main class="container">
         <!-- Intro Section -->
         <section id="intro" class="intro-section">
-            <h1>Hi, I'm Nageeta Kumari</h1>
-            <p>AI Researcher & Software Engineer passionate about solving real-world problems using machine learning, NLP, and modern technologies. Currently pursuing MVA at École Normale Supérieure Paris-Saclay.</p>
+            <img src="assets/my_image.jpeg" alt="Nageeta Kumari" class="intro-image">
+            <div class="intro-content">
+                <h1>Hi, I'm Nageeta Kumari</h1>
+                <p>AI Researcher & Software Engineer passionate about solving real-world problems using machine learning, NLP, and modern technologies. I have completed my MVA at École Normale Supérieure Paris-Saclay and am currently exploring my next opportunity to apply my expertise in AI research and development.</p>
+            </div>
         </section>
 
         <!-- Experience Section -->
@@ -238,7 +273,6 @@
 
                 <!-- Project 1 -->
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="not-MIWAE">
                     <div class="card-content">
                         <h3>Modeling for MNAR Data (not-MIWAE)</h3>
                         <p>Re-implemented not-MIWAE generative model and benchmarked it on UCI & stock datasets.</p>
@@ -248,7 +282,6 @@
 
                 <!-- Project 2 -->
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="Composed Image Retrieval">
                     <div class="card-content">
                         <h3>Composed Image Retrieval</h3>
                         <p>Adapted CoVR-BLIP-2 for CIRR dataset and improved Recall@1 with attention pooling.</p>
@@ -259,7 +292,6 @@
 
                 <!-- Project 3 -->
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="Patent Match Challenge">
                     <div class="card-content">
                         <h3>Patent Match Challenge</h3>
                         <p>Used sentence-transformers and fine-tuned BERT models for patent citation matching.</p>
@@ -269,7 +301,6 @@
 
                 <!-- Project 4 -->
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="VLM Compositional Understanding">
                     <div class="card-content">
                         <h3>Compositional Understanding in VLMs</h3>
                         <p>Evaluated VLMs on ARO benchmark, showing improved performance of Qwen2.5 over CLIP/BLIP.</p>
@@ -280,7 +311,6 @@
 
                 <!-- Project 5 -->
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="RelevAI-Reviewer">
                     <div class="card-content">
                         <h3>RelevAI-Reviewer (Benchmark System)</h3>
                         <p>Relevance ranking for survey papers vs CFP prompts using ML baselines & fine-tuned transformers.</p>
@@ -291,7 +321,6 @@
 
                 <!-- Project 6 -->
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="Scrimish Game">
                     <div class="card-content">
                         <h3>Scrimish (Android Game)</h3>
                         <p>Android implementation of Scrimish card game with game logic and UI design.</p>
@@ -302,7 +331,6 @@
 
                 <!-- Project 7 -->
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="SIBA Stack Overflow">
                     <div class="card-content">
                         <h3>SIBA Stack Overflow (Q&A Web App)</h3>
                         <p>Student/teacher Q&A platform with React.js, Node.js, MySQL.</p>
@@ -313,7 +341,6 @@
 
                 <!-- Project 8 -->
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="Gender Detection">
                     <div class="card-content">
                         <h3>Gender Detection Using Eye</h3>
                         <p>CNN model predicting gender from eye images with preprocessing and training pipeline.</p>
@@ -330,60 +357,17 @@
             <h2>Publications</h2>
             <div class="card-grid">
 
-                <!-- Publication 1 -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="RelevAI Paper">
+                <!-- Publication -->
+                <div class="card publication-card">
                     <div class="card-content">
                         <h3>RelevAI-Reviewer: A Benchmark on AI Reviewers for Survey Paper Relevance</h3>
-                        <p><em>Nageeta Kumari</em>, Paulo Henrique Couto, Quang Phuoc Ho (2024).</p>
-                        <p>Explores relevance ranking for survey papers using transformer-based models and ML baselines.</p>
-                        <p><strong>Type:</strong> Research Paper</p>
-                        <p>
+                        <p><strong>Authors:</strong> Paulo Henrique Couto, Quang Phuoc Ho, <em>Nageeta Kumari</em>, Benedictus Kent Rachmat, Thanh Gia Hieu Khuong, Ihsan Ullah, Lisheng Sun-Hosoya</p>
+                        <p><strong>Conference:</strong> Conférence sur l'Apprentissage Automatique (CAp) 2024, Lille, France</p>
+                        <p><strong>Abstract:</strong> Recent advancements in AI, particularly Large Language Models (LLMs), offer promise for automating scientific paper review. This paper proposes RelevAI-Reviewer, an automatic system that conceptualizes survey paper review as a classification problem, aimed at assessing paper relevance to specified prompts. We introduce a novel dataset of 25,164 instances and explore various baseline approaches including traditional ML classifiers like SVM and advanced language models such as BERT.</p>
+                        <p><strong>Links:</strong> 
                             <a href="https://arxiv.org/abs/2406.10294" target="_blank">arXiv</a> · 
                             <a href="https://hal.science/LISN/hal-04608255v1" target="_blank">HAL</a>
                         </p>
-                    </div>
-                </div>
-
-                <!-- Publication 2 -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="not-MIWAE">
-                    <div class="card-content">
-                        <h3>Handling MNAR Data with not-MIWAE</h3>
-                        <p>Explores generative modeling for Missing Not At Random (MNAR) data. Benchmarked on real-world datasets.</p>
-                        <p><strong>Type:</strong> Research Report</p>
-                    </div>
-                </div>
-
-                <!-- Publication 3 -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="CIR with BLIP-2">
-                    <div class="card-content">
-                        <h3>Image Retrieval with Compositional Queries</h3>
-                        <p>Investigated vision-language models for compositional image retrieval. Improved performance on CIRR.</p>
-                        <p><strong>Type:</strong> Project Report</p>
-                        <p><a href="https://drive.google.com/file/d/1regVMTobFC2RjGxqjbim6N_EMM36UB3f/view" target="_blank">View Report</a></p>
-                    </div>
-                </div>
-
-                <!-- Publication 4 -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="VLM understanding">
-                    <div class="card-content">
-                        <h3>Compositional Evaluation in VLMs</h3>
-                        <p>Benchmarked vision-language models on compositional reasoning tasks using the ARO dataset.</p>
-                        <p><strong>Type:</strong> Research Evaluation</p>
-                        <p><a href="https://drive.google.com/file/d/1uYfVymnJbE6bkh3pwxajPRQLI1e-EQ5i/view" target="_blank">View Report</a></p>
-                    </div>
-                </div>
-
-                <!-- Publication 5 -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/400x200" alt="Chain-of-Tables">
-                    <div class="card-content">
-                        <h3>Research on Chain-of-Tables (Table QA)</h3>
-                        <p>Compared Chain-of-Table and ReAcTable on WikiTQ with contrastive and few-shot prompting.</p>
-                        <p><strong>Type:</strong> Research Report</p>
                     </div>
                 </div>
 
