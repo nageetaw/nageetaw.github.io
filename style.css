@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
@@ -155,9 +159,19 @@ button:hover,
     .navbar nav ul {
         flex-direction: column;
         align-items: flex-end;
+        gap: 10px;
     }
 
     .hero-section h2 {
         font-size: 28px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
