@@ -1,5 +1,5 @@
 Nageeta Kumari
-+33758542481 | nageetaw@gmail.com | linkedin.com/in/nageeta | github.com/nageetaw | nageeta.github.io
+linkedin.com/in/nageeta | github.com/nageetaw | nageeta.github.io
 EDUCATION
 Ecole normale sup´erieure paris saclay	Cachan, France
 MVA (Math´ematiques, Vision, Apprentissage) (GPA: 16/20)	Sep 2024 – Sep 2025
@@ -41,3 +41,4 @@ Reading Books, Painting, Cooking, Traveling.
 
 PUBLICATIONS
 RelevAI-Reviewer: A Benchmark on AI Reviewers for Survey Paper Relevance
+
