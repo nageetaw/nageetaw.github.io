@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import Navbar from '../components/Navbar'
 import Intro from '../components/Intro'
 import Experience from '../components/Experience'
@@ -25,11 +25,25 @@ const Home = () => {
       projects: projectsRef,
       publications: publicationsRef,
       awards: awardsRef,
+      rewards: awardsRef,
       contact: contactRef
     }
 
     refs[section]?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
+
+  useEffect(() => {
+    try {
+      const section = sessionStorage.getItem('scrollToSection')
+      if (section) {
+        sessionStorage.removeItem('scrollToSection')
+        // Wait a tick so layout is ready
+        setTimeout(() => scrollToSection(section), 50)
+      }
+    } catch {
+      // ignore
+    }
+  }, [])
 
   return (
     <div className="min-h-screen bg-white">

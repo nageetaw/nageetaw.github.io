@@ -11,7 +11,12 @@ const Navbar = ({ onNavigate }) => {
     if (location.pathname === '/' && onNavigate) {
       onNavigate(section)
     } else {
-      // If on another page, navigate to home first
+      // If on another page, remember the section and navigate home.
+      try {
+        sessionStorage.setItem('scrollToSection', section)
+      } catch {
+        // ignore
+      }
       navigate('/')
     }
   }
@@ -22,67 +27,67 @@ const Navbar = ({ onNavigate }) => {
         <nav>
           <ul className="flex flex-wrap justify-end gap-5 list-none">
             <li>
-              <a
-                href="#"
+              <button
+                type="button"
                 onClick={(e) => handleSectionClick(e, 'intro')}
                 className="text-white no-underline font-medium hover:underline cursor-pointer"
               >
                 Home
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#"
+              <button
+                type="button"
                 onClick={(e) => handleSectionClick(e, 'experience')}
                 className="text-white no-underline font-medium hover:underline cursor-pointer"
               >
                 Experience
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#"
+              <button
+                type="button"
                 onClick={(e) => handleSectionClick(e, 'education')}
                 className="text-white no-underline font-medium hover:underline cursor-pointer"
               >
                 Education
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#"
+              <button
+                type="button"
                 onClick={(e) => handleSectionClick(e, 'projects')}
                 className="text-white no-underline font-medium hover:underline cursor-pointer"
               >
                 Projects
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#"
+              <button
+                type="button"
                 onClick={(e) => handleSectionClick(e, 'publications')}
                 className="text-white no-underline font-medium hover:underline cursor-pointer"
               >
                 Publications
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#"
+              <button
+                type="button"
                 onClick={(e) => handleSectionClick(e, 'awards')}
                 className="text-white no-underline font-medium hover:underline cursor-pointer"
               >
                 Awards
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="#"
+              <button
+                type="button"
                 onClick={(e) => handleSectionClick(e, 'contact')}
                 className="text-white no-underline font-medium hover:underline cursor-pointer"
               >
                 Contact
-              </a>
+              </button>
             </li>
             {/* <li>
               <Link to="/gallery" className="text-white no-underline font-medium hover:underline">

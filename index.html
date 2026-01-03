@@ -10,6 +10,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <script type="text/javascript">
+        // Handle legacy section URLs like /#education or /#intro.
+        // HashRouter treats those as routes and would render a blank page.
+        (function () {
+            var hash = window.location.hash;
+            var legacy = {
+                '#intro': 'intro',
+                '#experience': 'experience',
+                '#education': 'education',
+                '#projects': 'projects',
+                '#publications': 'publications',
+                '#awards': 'awards',
+                '#rewards': 'awards',
+                '#contact': 'contact'
+            };
+
+            // Only rewrite hashes that are not HashRouter routes (which start with #/)
+            if (hash && !hash.startsWith('#/') && legacy[hash]) {
+                try {
+                    sessionStorage.setItem('scrollToSection', legacy[hash]);
+                } catch (e) {
+                    // ignore
+                }
+
+                window.location.replace(window.location.origin + '/#/');
+            }
+        })();
+
         // Redirect from /index.html to root
         if (window.location.pathname === '/index.html') {
             window.location.replace('/' + window.location.hash);
