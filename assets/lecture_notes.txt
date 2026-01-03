@@ -1,0 +1,22 @@
+we want to minimize risk/loss and avoid overfitting, so we need large n(training samples) and large F(function parameter space like NN )
+but when we have some domain where is it not possible to have more training samples, then we need to do some techniques
+to avoid overfitting, for better generalization.
+the old methods used like regularization, data augmentation, does not work always.
+now we will learn new techniques here for that.
+1- Feature engineering/learning
+2- Transfer Learning
+
+--------------------------------------------
+1- Feature engineering/learning
+	1.1 manual fetaure engineering
+	1.2 Feature learning
+		through PCA, ICA, NNMF
+		more advanced --> through deep learning
+	
+		
+		
+		
+
+------Lecture 4-----
+
+

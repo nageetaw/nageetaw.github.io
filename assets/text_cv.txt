@@ -1,0 +1,44 @@
+Nageeta Kumari
+linkedin.com/in/nageeta | github.com/nageetaw | nageeta.github.io
+EDUCATION
+Ecole normale sup´erieure paris saclay	Cachan, France
+MVA (Math´ematiques, Vision, Apprentissage) (GPA: 16/20)	Sep 2024 – Sep 2025
+Universit´e Paris-Saclay	Gif-sur-Yvette, France
+Master in Data Science (GPA: 15.6/20)	Aug. 2023 – Aug 2024
+Sukkur IBA University	Sukkur, Pakistan
+Bachelor’s in Computer Science (GPA: 3.68/4)	Aug. 2018 – Aug 2022
+EXPERIENCE
+Applied AI and ML Research Intern	Apr 2025 – Oct 2025
+Datadog	Paris, France
+•	Developed probabilistic models for root-cause analysis on distributed traces against latency and error alerts.
+•	Built optimized Trino-SQL plus Python pipelines with unbiased sampling to reduce data retrieval latency.
+•	Achieved 95% recall and 77% precision with a custom evaluation framework on annotated datasets.
+Research Student and Intern	Feb 2024 – Jul 2024
+INRAE	Paris, France
+•	Harmonized INCA2 and INCA3 datasets for unified nutritional classification and cross-cohort analysis.
+•	Developed FoodEx2 mapping pipeline with human-in-the-loop verification.
+•	Gained experience in data harmonization, ontology structuring, and semantic modeling workflows.
+Software Engineer	Aug 2022 – Aug 2023
+SoundM and DLLC	Florida, United States
+•	Developed secure chat platform using FastAPI, and React with OAuth2, rate-limiting, and E2E encryption.
+•	Designed scalable REST APIs for authentication and user management with reliability-focused architecture.
+•	Deployed microservices on AWS and contributed to monitoring and performance optimization.
+PROJECTS
+Modeling MNAR Data (not-MIWAE) Report	Jan 2024 – Apr 2024
+•	Re-implemented not-MIWAE for MNAR imputation and benchmarked against MIWAE, MICE on UCI datasets.
+Composed Image Retrieval Report	Dec 2023 – Feb 2024
+•	Adapted CoVR-BLIP-2 for CIRR and improved Recall@1 +3% using attention-based pooling.
+Patent Match Challenge Competition Page	Oct 2023 – Nov 2023
+•	Built TF-IDF + embedding pipeline and fine-tuned BERT models and achieved Precision@10 87.6%.
+
+TECHNICAL SKILLS
+ML/AI: Python, PyTorch, Transformers, LLMs, RAG, Representation learning.
+Data/Frameworks: SQL, NoSQL, FastAPI, Node.js, React.js, React Native, java-script, Flutter
+Cloud/DevOps: AWS, Google Cloud Platform, Docker, Kubernetes, CI/CD (GitHub Actions), MLflow
+
+INTERESTS
+Reading Books, Painting, Cooking, Traveling.
+
+PUBLICATIONS
+RelevAI-Reviewer: A Benchmark on AI Reviewers for Survey Paper Relevance
+
