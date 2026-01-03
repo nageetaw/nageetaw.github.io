@@ -1,7 +1,8 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 const Navbar = ({ onNavigate }) => {
   const location = useLocation()
+  const navigate = useNavigate()
 
   const handleSectionClick = (e, section) => {
     e.preventDefault()
@@ -11,8 +12,7 @@ const Navbar = ({ onNavigate }) => {
       onNavigate(section)
     } else {
       // If on another page, navigate to home first
-      window.location.href = '/#/'
-      // Wait a bit then scroll (will be handled after redirect)
+      navigate('/')
     }
   }
 
