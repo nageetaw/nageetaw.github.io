@@ -1,16 +1,28 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
   const location = useLocation()
+  const navigate = useNavigate()
 
   const handleHashClick = (e, hash) => {
-    if (location.pathname !== '/') {
-      return // Let Link handle navigation if not on home page
-    }
     e.preventDefault()
-    const element = document.querySelector(hash)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+
+    // If not on home page, navigate to home first
+    if (location.pathname !== '/') {
+      navigate('/')
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        const element = document.querySelector(hash)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 100)
+    } else {
+      // Already on home page, just scroll
+      const element = document.querySelector(hash)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
     }
   }
 
@@ -20,67 +32,67 @@ const Navbar = () => {
         <nav>
           <ul className="flex flex-wrap justify-end gap-5 list-none">
             <li>
-              <Link
-                to="/#intro"
+              <a
+                href="#intro"
                 onClick={(e) => handleHashClick(e, '#intro')}
-                className="text-white no-underline font-medium hover:underline"
+                className="text-white no-underline font-medium hover:underline cursor-pointer"
               >
                 Home
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/#experience"
+              <a
+                href="#experience"
                 onClick={(e) => handleHashClick(e, '#experience')}
-                className="text-white no-underline font-medium hover:underline"
+                className="text-white no-underline font-medium hover:underline cursor-pointer"
               >
                 Experience
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/#education"
+              <a
+                href="#education"
                 onClick={(e) => handleHashClick(e, '#education')}
-                className="text-white no-underline font-medium hover:underline"
+                className="text-white no-underline font-medium hover:underline cursor-pointer"
               >
                 Education
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/#projects"
+              <a
+                href="#projects"
                 onClick={(e) => handleHashClick(e, '#projects')}
-                className="text-white no-underline font-medium hover:underline"
+                className="text-white no-underline font-medium hover:underline cursor-pointer"
               >
                 Projects
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/#publications"
+              <a
+                href="#publications"
                 onClick={(e) => handleHashClick(e, '#publications')}
-                className="text-white no-underline font-medium hover:underline"
+                className="text-white no-underline font-medium hover:underline cursor-pointer"
               >
                 Publications
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/#rewards"
+              <a
+                href="#rewards"
                 onClick={(e) => handleHashClick(e, '#rewards')}
-                className="text-white no-underline font-medium hover:underline"
+                className="text-white no-underline font-medium hover:underline cursor-pointer"
               >
                 Awards
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/#contact"
+              <a
+                href="#contact"
                 onClick={(e) => handleHashClick(e, '#contact')}
-                className="text-white no-underline font-medium hover:underline"
+                className="text-white no-underline font-medium hover:underline cursor-pointer"
               >
                 Contact
-              </Link>
+              </a>
             </li>
             {/* <li>
               <Link to="/gallery" className="text-white no-underline font-medium hover:underline">
